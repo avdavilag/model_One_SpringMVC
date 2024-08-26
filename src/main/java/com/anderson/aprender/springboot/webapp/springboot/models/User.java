@@ -4,14 +4,15 @@ public class User {
 
     private String name;
     private String lastname;
-
-    public User() {
-        // Empty constructor
-    }
+    private String email;
 
     public User(String name, String lastname) {
         this.name = name;
         this.lastname = lastname;
+
+    }
+
+    public User() {
     }
 
     public String getName() {
@@ -28,6 +29,14 @@ public class User {
 
     public void setLastname(String lastname) {
         this.lastname = lastname;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
 }
