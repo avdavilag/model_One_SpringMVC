@@ -13,13 +13,17 @@
         <li th:text="${user.lastname}"></li>
         <li th:if="${user.email !=null}" th:text="${user.email}"></li>
         <li th:if="${user.email == null }" th:text="${'No tiene Email'}"></li>
-
         <!-- <li th:text="${user.email}"></li> -->
-
         </li>
     </ul>
+<a th:href="@{/list}">Ver Detalles</a>
+<a th:href="@{'/api/params/foo?message='+${title}}">Ver Mensaje</a>
 
-    
+<a th:href="@{/api/params/foo(message='Hi, Anderson. How are you!!')}">View Two - Messager</a>
+<a th:href="@{/api/params/foo(message='Hi, Anderson. How are you!!')}">View One - Messager</a>
+<a th:href="@{/api/params/bar(text='Hi. Mst. Anderson what is festival',code = 23251 )}">View Bar part params </a>
+<a th:href="@{/api/var/baz/Hi always message}">View Var path variables </a>
+
     
 </body>
 </html>
