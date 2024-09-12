@@ -1,14 +1,13 @@
-package com.anderson.aprender.springboot.webapp.springboot;
+package com.anderson.springboot.di.app.springboot_di;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringbootApplication {
+public class SpringbootDiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringbootApplication.class, args);
-
+		SpringApplication.run(SpringbootDiApplication.class, args);
 	}
 
 }

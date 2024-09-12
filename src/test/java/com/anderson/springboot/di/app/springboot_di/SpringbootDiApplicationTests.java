@@ -1,10 +1,10 @@
-package com.anderson.aprender.springboot.webapp.springboot;
+package com.anderson.springboot.di.app.springboot_di;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringbootApplicationTests {
+class SpringbootDiApplicationTests {
 
 	@Test
 	void contextLoads() {
