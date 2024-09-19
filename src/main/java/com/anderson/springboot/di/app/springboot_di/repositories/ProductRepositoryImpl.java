@@ -5,11 +5,11 @@ import java.util.List;
 
 import com.anderson.springboot.di.app.springboot_di.models.Products;
 
-public class ProductRepository {
+public class ProductRepositoryImpl implements ProductoRepository {
 
     private List<Products> data;
 
-    public ProductRepository() {
+    public ProductRepositoryImpl() {
         this.data = Arrays.asList(
                 new Products(1L, "Memory corsair", 2L),
                 new Products(2L, "CPU verifity", 3L),
@@ -17,10 +17,12 @@ public class ProductRepository {
                 new Products(4L, "Motherborad Gigabyte", 5L));
     }
 
+    @Override
     public List<Products> findAll() {
         return data;
     }
 
+    @Override
     public Products findById(Long id) {
         return data.stream().filter(p -> p.getId().equals(id)).findFirst().orElse(null);
     }
