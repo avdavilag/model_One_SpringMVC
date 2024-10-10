@@ -1,0 +1,24 @@
+
+[
+    {
+        "id": 1,
+        "name": "Salchipapa",
+        "price": 2.50
+    },
+    {
+        "id": 2,
+        "name": "Hamburgesa",
+        "price": 1.50
+    },
+    {
+        "id": 3,
+        "name": "Alitas Barbiqueori",
+        "price": 2.90
+    },
+    {
+        "id": 4,
+        "name": "Palomitas Dulces",
+        "price": 3.20
+    }
+
+]
